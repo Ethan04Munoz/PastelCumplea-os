@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Cake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="cake">
+        <div id="candles"></div>
+        <div class="layer top"></div>
+        <div class="layer middle"></div>
+        <div class="layer bottom"></div>
+    </div>
+    <div class="controls">
+        <label for="candle-count">Number of Candles: </label>
+        <input type="number" id="candle-count" min="0" max="20" value="5">
+        <button onclick="updateCandles()">Set Candles</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

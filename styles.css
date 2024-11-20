@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f3e7;
+}
+
+.cake {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.layer {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.layer.top {
+    background-color: #ff6666;
+    z-index: 3;
+    position: relative;
+    border-radius: 50% 50% 0% 0%;
+    margin-top: -15px;
+}
+
+.layer.middle {
+    background-color: #ff6666;
+    z-index: 2;
+    position: relative;
+    border-radius: 0 0 50% 50%;
+    margin-top: -15px;
+}
+
+.layer.bottom {
+    background-color: #cc3333;
+    z-index: 1;
+    position: relative;
+    border-radius: 0 0 50% 50%;
+    margin-top: -25px;
+}
+
+#candles {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.candle {
+    width: 10px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 3px;
+    position: relative;
+}
+
+.candle:before {
+    content: '';
+    width: 5px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation: flicker 0.5s infinite;
+}
+
+@keyframes flicker {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.controls {
+    margin-top: 20px;
+}
