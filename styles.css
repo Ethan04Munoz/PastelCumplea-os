@@ -17,24 +17,31 @@ body {
     position: relative;
 }
 
-.layer.top {
+.layer.top{
     background-color: #ff6666;
     z-index: 3;
     position: relative;
+    margin-top: -25px;
+}
+
+.layer.top1{
     border-radius: 50% 50% 0% 0%;
-    margin-top: -15px;
+}
+
+.layer.top2{
+    border-radius: 0 0 50% 50%;
 }
 
 .layer.middle {
-    background-color: #ff6666;
+    background-color: #cc3333;
     z-index: 2;
     position: relative;
     border-radius: 0 0 50% 50%;
-    margin-top: -15px;
+    margin-top: -25px;
 }
 
 .layer.bottom {
-    background-color: #cc3333;
+    background-color: #ff6666;
     z-index: 1;
     position: relative;
     border-radius: 0 0 50% 50%;
