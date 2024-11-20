@@ -62,8 +62,8 @@ body {
 }
 
 .candle {
-    width: 10px;
-    height: 30px;
+    width: 5px;
+    height: 20px;
     background-color: yellow;
     border-radius: 3px;
     position: relative;
@@ -72,8 +72,8 @@ body {
 
 .candle:before {
     content: '';
-    width: 5px;
-    height: 10px;
+    width: 4px;
+    height: 6px;
     background-color: red;
     position: absolute;
     top: -10px;
